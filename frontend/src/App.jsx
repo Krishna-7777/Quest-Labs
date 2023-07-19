@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Loading from './components/Loading/Loading';
+import Text2SpeechButton from './components/Text2Speech/T2S';
 
 function App() {
   let [ans1, setAns1] = useState("")
@@ -49,6 +50,7 @@ function App() {
       {response && <div>
         <h2>Generated Text</h2>
         <h3>{response.generatedText}</h3>
+        <Text2SpeechButton text={response.generatedText} />
         </div>}
     </div>
   );

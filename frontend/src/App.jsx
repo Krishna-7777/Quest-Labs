@@ -48,7 +48,7 @@ function App() {
       {loading&&<Loading />}
       {response && <div>
         <h2>Generated Text</h2>
-        <h4>{response.generatedText}</h4>
+        <h3>{response.generatedText}</h3>
         </div>}
     </div>
   );

@@ -41,7 +41,7 @@ const Text2SpeechButton = ({ text }) => {
     return (
         <div>
             <button onClick={handlePlayButtonClick} disabled={isPlaying}>
-                {isPlaying==undefined ? "loading..":isPlaying?'Playing...' : 'Play Audio'}
+                {isPlaying===undefined ? "loading..":isPlaying?'Playing...' : 'Play Audio'}
             </button>
         </div>
     );
